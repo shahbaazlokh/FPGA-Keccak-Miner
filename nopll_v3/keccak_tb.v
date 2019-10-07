@@ -33,7 +33,7 @@ module keccak_tb();
 	initial begin
 	   forever #2 clk = ~clk;
 	end
-	
+	// Smartcash Genesis blockheader, nonce = golden nonce
 	initial begin
 	   in = 608'h02000000a4051e368bfa0191e6c747507dd0fdb03da1a0a54ed14829810b97c6ac070000e932b0f6b8da85ccc464d9d5066d01d904fb05ae8d1ddad7095b9148e3f08ba6bcfb6459f0ff0f1e;
 	   nonce = 32'h3682bb08;
