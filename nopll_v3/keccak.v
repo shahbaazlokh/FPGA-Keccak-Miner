@@ -159,8 +159,8 @@ assign gn_match = gn_match_d;
 always @(posedge clk)
 begin
 
-gn_match_d <= ((hash[63:32] == 32'h00000000) & (hash[31:0] <= target1));
-
+//gn_match_d <= ((hash[63:32] == 32'h00000000) & (hash[31:0] <= target1));
+	gn_match_d <= (hash[63:32] <= target1);
 
 `ifdef SIM		
 
